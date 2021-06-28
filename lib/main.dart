@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:netflix_clone_test/screen/home_screen.dart';
 import 'package:netflix_clone_test/widget/bottome_bar.dart';
 
+import 'screen/more_screen.dart';
+
 void main() => runApp(MyApp());
 
 class MyApp extends StatefulWidget {
@@ -36,11 +38,7 @@ class _MyAppState extends State<MyApp> {
                   child: Text('save'),
                 ),
               ),
-              Container(
-                child: Center(
-                  child: Text('more'),
-                ),
-              ),
+              MoreScreen(),
             ],
           ),
           bottomNavigationBar: Bottom(),
