@@ -44,7 +44,8 @@ List<Widget> makeBoxImages(List<Movie> movies, BuildContext context) {
         padding: EdgeInsets.only(right: 10),
         child: Align(
           alignment: Alignment.centerLeft,
-          child: Image.asset('images/' + movies[i].poster),
+          // 해당 링크의 이미지를 불러옴
+          child: Image.network(movies[i].poster),
         ),
       ),
     ));
